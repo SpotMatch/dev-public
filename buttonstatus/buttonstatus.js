@@ -1,4 +1,4 @@
-alert("Hier ist die JS-Datei!")
+//alert("Hier ist die JS-Datei!")
 
 
-$( "#meindiv" ).html( "Hallo Welt aus JS" )
+$( "#mytext" ).html( "Hallo Welt aus JS" )
