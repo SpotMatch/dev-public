@@ -1,4 +1,4 @@
 //alert("Hier ist die JS-Datei!")
 
-
-$( "#mytext" ).html( "Hallo Welt aus JS" )
+$( "#mydiv" ).text( "Hallo Welt in DIV" )
+$( "#mytext" ).text( "Hallo Welt in P" )
