@@ -1,0 +1,1 @@
+$( "#meindiv" ).html( "Hallo Welt aus JS" )
