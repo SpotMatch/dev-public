@@ -12,7 +12,9 @@ $( "#button" ).click(function(){
 
 let testdiv = document.getElementById("mydiv")
 let testtext = document.getElementById("mytext")
+let testbutton = document.getElementById("button")
+
 
 testdiv.innerHTML("JS to DIV")
 testtext.innerHTML("JS to TEXT")
-
+testbutton
