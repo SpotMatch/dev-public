@@ -17,4 +17,8 @@ let testbutton = document.getElementById("button")
 
 testdiv.innerHTML("JS to DIV")
 testtext.innerHTML("JS to TEXT")
-testbutton
+
+
+testbutton.addEventListener("click", function () {
+    alert("funktionier!")
+})
