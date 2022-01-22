@@ -1,1 +1,1 @@
-$( "#meindiv" ).html( "Hallo Welt aus JS" )
+$( "#meindiv" ).text( "Hallo Welt aus JS" )
