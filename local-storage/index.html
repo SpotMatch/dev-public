@@ -7,11 +7,29 @@
     <title>local storage test</title>
 </head>
 <body>
-    <div id="local-wrapper" >  
-        <button type="button">Set Local Storage</button> 
-        <div id="local-ausgabe">  
-            <p>Local Ausgabe:</p>
-        </div>
+    <div id="local-wrapper" >
+        <label for="wert-input">Mein individueller Wert</label><br>
+        <input type="text" id="wert-input" name="wert-input"> <br><br>
+        <button type="button" id="set-local-button">Set Local Storage</button> 
+        <button type="button" id="get-local-button">Get Local Storage</button> <br><br>
+        <div id="local-ausgabe" ></div>
     </div>
+
+    <script>
+
+document.getElementById("set-local-button").onclick = function(){
+    let indivWert = document.getElementById("wert-input").value
+    localStorage.setItem('myCat', indivWert);
+    document.getElementById("local-ausgabe").innerHTML = "<p>Mein individueller local storage Wert wurde gespeichert."
+}
+
+document.getElementById("get-local-button").onclick = function(){
+    let cat = localStorage.getItem('myCat');
+    document.getElementById("local-ausgabe").innerHTML = "<p>Mein gespeicherter local storage Wert: " + "<b>"+cat+"</b>"
+}
+
+
+
+    </script>
 </body>
 </html>
